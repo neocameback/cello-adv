@@ -168,6 +168,8 @@ services:
           memory: 256M
     environment:
       - NO_USED=0
+    ports:
+      - "27017:27017"
     volumes:
       - /opt/cello/mongo:/data/db
 
@@ -179,6 +181,8 @@ services:
       - MYSQL_USER=$KEYCLOAK_DB_USERNAME
       - MYSQL_PASSWORD=$KEYCLOAK_DB_PASSWORD
       - MYSQL_ROOT_PASSWORD=$KEYCLOAK_MYSQL_ROOT_PASSWORD
+    ports:
+      - "3306:3306"
     volumes:
       - /opt/cello/keycloak-mysql:/var/lib/mysql
 
