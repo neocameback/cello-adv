@@ -3,4 +3,4 @@
 export USER_DASHBOARD_WEBROOT?=/
 
 export USER_DASHBOARD_SSO_KEY?=cello-user-dashboard
-export USER_DASHBOARD_SSO_SECRET?=
+export USER_DASHBOARD_SSO_SECRET?=f555f2d8-110b-4581-8dee-38c5554eefea
